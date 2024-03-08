@@ -1,0 +1,8 @@
+image_path:
+  hik_img_path: /home/bupt-rc/Code/opencv/2024/030401_DataSetCollection/img/hik_img
+  realsense_img_path: /home/bupt-rc/Code/opencv/2024/030401_DataSetCollection/img/realsense_img
+  industry_img_path: /home/bupt-rc/Code/opencv/2024/030401_DataSetCollection/img/industry_img
+image_cnt:
+  hik_img_cnt: 1
+  realsense_img_cnt: 1
+  industry_img_cnt: 1

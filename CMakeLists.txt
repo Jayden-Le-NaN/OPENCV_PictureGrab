@@ -13,6 +13,7 @@ file(GLOB CPP_FILES "${PROJECT_SOURCE_DIR}/inc/*.cpp")
 #------------------------------inlcude head file------------------------------
 find_package(OpenCV REQUIRED)
 find_package(realsense2 REQUIRED)
+find_package(yaml-cpp REQUIRED)
 include_directories(${PROJECT_SOURCE_DIR}/inc)
 
 add_executable(app 
@@ -22,5 +23,5 @@ add_executable(app
 
 target_include_directories(app PRIVATE ${MVCAM_COMMON_PATH}/include)
 target_link_directories(app PRIVATE ${MVCAM_COMMON_RUNENV}/aarch64)
-target_link_libraries(app PRIVATE ${OpenCV_LIBS} ${realsense2_LIBRARY} MvCameraControl jpeg png)
+target_link_libraries(app PRIVATE ${OpenCV_LIBS} ${realsense2_LIBRARY} MvCameraControl jpeg png yaml-cpp)
 
